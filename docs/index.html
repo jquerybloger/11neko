@@ -4,10 +4,126 @@
 	<meta charset="UTF-8">
 	<title>XD.CSSのサンプル</title>
 	<link rel="stylesheet" href="./css/XD.min.css" />
+	<style>
+	body{
+		overflow-x:hidden;
+	}
+	.item_box{height: 150px;display: flex;flex-direction: column;justify-content: center;}
+	.item{text-align: center;font-size: 1.5rem;
+    font-weight: bold;}
+    .group{display:flex;}
+    .group ul{
+    	list-style:none;
+    	padding:0;
+    	margin:0;
+    	display: flex;
+	    justify-content: center;
+	    width: 100%;
+	    flex-wrap:wrap;
+    }
+    .group li{
+    	width:30%;
+    }
+    .select_area{text-align:center;}
+    .sample_menu{padding:1rem;}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="ψ(`∇´)ψ">
-  		<div>11neko</div>
+
+	<p>下のプルダウンメニューで見たいアニメーションを選択すると(´・ω・`)にアニメーションが適用されます。</p>
+	<p>アニメーションが動作しない時は、プルダウンメニューの初期化を選択後に、再度見てみたいアニメーションを選択してください。</p>
+<div class="select_area">
+	<select name="sample_menu" class="sample_menu" id="select1">
+		<option value="area item">初期化</option>
+		<option value="ψ(`∇´)ψ且(＞_＜)(￢_￢;)(´ー`)y-~ヽ(`д´*)ノ且ε=┌(;￣▽￣)=○ area item">ゼリーっぽいの</option>
+		<option value="(`･ω･´)ε=┌(;￣▽￣)┘ area item">フェードインスライド</option>
+		<option value="ε=┌(;￣▽￣)┘(´ー`)y-~~(≧ω≦)(((＞＜)))(´_ゝ｀)★ヾ(´▽`) area item">手裏剣</option>
+		<option value="(◍´-`◍)ヾ(´∀`*)＜°))＞≪(-_-)(((＞＜)))(￣(ｴ)￣)ﾉw(￣(ｴ)￣)ﾉh area item">ゲッダンするやつ</option>
+		<option value="(﹡ˆ~ˆ﹡)ヾ(´∀`*)＜°))＞≪(´ー`)y-~~(((;°Д°;))))ヾ(￣ω￣;)(・Ａ・)★ area item">ﾃﾝｼｮﾝ高いやつ</option>
+	</select>
+</div>
+<div class="item_box">
+	<div class="item area">
+	(´・ω・`)
 	</div>
+</div>
+<h3>ソースコード</h3>
+<div class="item_box">
+	<div class="source_area">
+	<pre><code class="result">
+	&lt;div class=&quot;item area&quot;&gt;
+	(&acute;・&omega;・`)
+	&lt;/div&gt;
+	</code></pre>
+	</div>
+</div>
+
+
+<div class="select_area">
+	<select name="sample_menu" class="sample_menu" id="select2">
+		<option value="area2">初期化</option>
+		<option value="(`･ω･´)ヾ(>▽<)ゞヾ(ω^)ゞ(´ー`)y-~~~~ area2">順番にフェードイン</option>
+		<option value="(`･ω･´)ヾ(>▽<)ゞヾ(ω^)ゞ(´ー`)y-~~~~(╹◡╹)(・∀・)☆ヾ(´▽`) area2">順番にふよふよ表示</option>
+		<option value="(`･ω･´)ヾ(>▽<)ゞヾ(ω^)ゞ(´ー`)y-~~~~(´｡•ω•｡`)♤(◍´x`◍) area2">くるっと順番に表示</option>
+		<option value="(`･ω･´)ﾍ(^^ﾍ)o(^^o)(´ー`)y-~~~~(´｡•ω•｡`)♤(◍´x`◍)(((＞＜))) area2">ブルブル順番に表示</option>
+		<option value="(`･ω･´)ヾ(>▽<)ゞヾ(ω^)ゞヾ(>ω)ゞヾ(>ω<)ゞε=┌(;￣▽￣)=○°0°)/ area2">下からスライド表示</option>
+	</select>
+</div>
+
+<div class="item_box2">
+	<div class="item group">
+		<ul class="area2">
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+			<li>(´・ω・`)</li>
+		</ul>
+	</div>
+</div>
+
+<h3>ソースコード</h3>
+<div class="item_box">
+	<div class="source_area">
+	<pre><code class="result2">
+	&lt;ul&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+		&lt;li&gt;(&acute;・&omega;・`)&lt;/li&gt;
+	&lt;/ul&gt;
+	</code></pre>
+	</div>
+</div>
+
+
+<script>
+$(function() {
+  $('#select1').change(function() {
+    var val = $(this).val();
+    $('.area').removeClass().addClass(val);
+    var rep = $('.item_box').html();
+    $('.result').text(rep);
+  });
+  $('#select2').change(function() {
+    var val = $(this).val();
+    $('.area2').removeClass().addClass(val);
+    var rep = $('.item_box2').html();
+    $('.result2').text(rep);
+  });
+
+});
+</script>
 </body>
 </html>
